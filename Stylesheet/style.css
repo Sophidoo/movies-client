@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: scroll;
+}
+body{
+    background-color: rgb(21, 17, 26);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.head__movie{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://baylorlariat.com/wp-content/uploads/2022/03/The-adam-project.jpeg);
+    background-size: cover;
+}
+.head__wrapper{
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    padding: 8px 0;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.logo{
+    font-family: 'Smooch', cursive;
+    color: rgb(213, 4, 255);
+    font-size: 35px;
+}
+.menu{
+    display: flex;
+    column-gap: 30px;
+}
+.menu i{
+    display: none;
+}
+.menu i:hover{
+    cursor: pointer;
+    color: rgb(213, 4, 255);
+    transition: 500ms;
+}
+.menu p:hover{
+    cursor: pointer;
+    color: rgb(213, 4, 255);
+    transition: 500ms;
+}
+form input{
+    width: 300px;
+    background-color: rgba(119, 106, 138, 0.712);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+}
+form input:focus{
+    border: 1px solid rgb(80, 1, 172);
+}
+form input::placeholder { 
+    color: white;
+    opacity: 1; 
+}  
+.profile__wrap{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+.profile__wrap i{
+    font-size: 20px;
+}
+.bi-list{
+    display: none;
+}
+.bi-search{
+    display: none;
+}
+.movie__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    row-gap: 40px;
+}
+.movie__wrap h1{
+    width: 45%;
+    font-size: 70px;
+}
+.movie__wrap p{
+    width: 40%;
+    font-size: 23px;
+}
+.movie__link{
+    display: flex;
+    column-gap: 20px;
+}
+.movie__link a{
+    color: white;
+    text-decoration: none;
+    padding: 9px 30px;
+    font-size: 15px;
+    background-color: rgb(121, 4, 255);
+    box-shadow: 0px 0px 5px rgb(70, 0, 150);
+}
+.movie__link a:hover{
+    transition: 500ms;
+    background-color: rgb(81, 0, 173);
+}
+.movie__title__head{
+    padding: 40px 60px;
+    padding-bottom: 20px;
+}
+.rec{
+    padding-top: 60px;
+}
+.recommended__wrap{
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.recommended__wrap:hover{
+    cursor: grab;
+}
+.recommended__wrap::-webkit-scrollbar{
+    height: 1px;
+}
+/* ::-webkit-scrollbar{
+    height: 10px;
+    
+}
+::-webkit-scrollbar-track {
+    margin-top: 20px;
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.295);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+.movie__pictures__wrap{
+    width: fit-content;
+    display: flex;
+    column-gap: 30px;
+}
+.movie__pictures{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.movie__pictures img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+.movie__download{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movie__download h3{
+    width: 85%;
+}
+.movie__download i{
+    font-size: 20px;
+}
+.movie__download i:hover{
+    cursor: pointer;
+    color: rgb(255, 174, 0);
+}
+.others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.others a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.others a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+footer{
+    margin-top: 60px;
+    padding: 60px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    border-top: 3px solid rgba(210, 187, 235, 0.158);
+    row-gap: 40px;
+    color: rgb(168, 168, 168);
+}
+.footer__top__wrapper{
+    display: flex;
+    column-gap: 80px;
+}
+.line{
+    height: 180px;
+    width: 3px;
+    background-color: rgba(210, 187, 235, 0.158);
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.categories p{
+    font-size: 15px;
+}
+.categories p:hover{
+    cursor: pointer;
+    color: rgb(213, 4, 255);
+    transition: 500ms;
+}
+.copy__wrapper{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+}
+
+
+
+
+@media(max-width:1000px){
+    nav p{
+        display: none;
+    }
+    nav i{
+        display: flex;
+    }
+    .bi-list{
+        display: flex;
+    }
+    .bi-search{
+        display: flex;
+    }
+    form{
+        display: none;
+    }
+    .profile p{
+        display: flex;
+    }
+    .movie__wrap h1{
+        font-size: 60px;
+    }
+    .movie__wrap p{
+        font-size: 22px;
+        width: 50%;
+    }
+}
+@media(max-width:800px){
+    .movie__wrap h1{
+        width: 80%;
+    }
+}
+@media(max-width:720px){
+    .movie__wrap h1{
+        font-size: 50px;
+    }
+    .movie__wrap p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .footer__top__wrapper{
+        column-gap: 60px;
+    }
+}
+@media(max-width:640px){
+    .head__movie{
+        transition: 500ms;
+        background-image: url(https://img.game-news24.com/2022/03/The-Adam-project-trailer-Ryan-Reynolds-goes-on-a-Time-Traveling-adventure.png);
+    }
+    .head__wrapper{
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+    .movie__wrap{
+        align-items: center;
+        height: 70vh;
+    }
+    .movie__details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie__wrap h1{
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .movie__wrap p{
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .movie__title__head h2{
+        font-size: 23px;
+    }
+    .recommended__wrap h3{
+        font-size: 17px;
+    }
+}
+@media(max-width:622px){
+    .head__wrapper{
+        padding: 0px 30px;
+    }
+    .movie__wrap{
+        row-gap: 30px;
+    }
+    .movie__title__head{
+        padding: 40px 30px;
+        padding-bottom: 20px;
+    }
+    .recommended__wrap{
+        padding: 0 30px;
+    }
+    footer{
+        padding: 60px 30px;
+        padding-bottom: 0;
+    }
+    .footer__top__wrapper{
+        column-gap: 40px;
+    }
+    .copy__wrapper{
+        padding: 40px 30px;
+    }
+}
+@media(max-width:600px){
+    .movie__wrap h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .movie__wrap p{
+        font-size: 18px;
+        width: 75%;
+        text-align: center;
+    }
+    .movie__link a{
+        font-size: 13px;
+    }
+    .movie__title__head h2{
+        font-size: 21px;
+    }
+    .recommended__wrap h3{
+        width: 90%;
+        font-size: 17px;
+    }
+    .profile p{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    .movie__wrap h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .movie__wrap p{
+        font-size: 17px;
+        width: 75%;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: flex-start;
+        border-top: 3px solid rgba(210, 187, 235, 0.158);
+        row-gap: 40px;
+        color: rgb(168, 168, 168);
+    }
+    .footer__top__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .line{
+        height: 3px;
+        width: 100%;
+        background-color: rgba(210, 187, 235, 0.158);
+    }
+}
+@media(max-width:410px){
+    .movie__wrap h1{
+        font-size: 33px;
+        text-align: center;
+    }
+    .movie__wrap p{
+        font-size: 17px;
+        width: 90%;
+        text-align: center;
+    }
+    .movie__link{
+        column-gap: 10px;
+    }
+    .movie__link a{
+        font-size: 11px;
+    }
+    .movie__title__head h2{
+        font-size: 20px;
+    }
+    .recommended__wrap h3{
+        width: 90%;
+        font-size: 16px;
+    }
+}
+@media(max-width:340px){
+    .movie__wrap h1{
+        font-size: 28px;
+    }
+    .movie__wrap p{
+        font-size: 15px;
+    }
+}
